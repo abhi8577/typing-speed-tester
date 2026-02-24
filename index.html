@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Typing Speed Tester</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container">
+
+<h2>⌨ Typing Speed Tester</h2>
+
+<div class="controls">
+    <select id="mode">
+        <option value="paragraph">Paragraph Mode</option>
+        <option value="time">60s Timer Mode</option>
+    </select>
+
+    <select id="difficulty"  >
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+    </select>
+</div>
+
+<div id="paragraph"></div>
+
+<textarea id="input" placeholder="Start typing here..."></textarea>
+
+<div class="stats">
+    Time: <span id="time">0</span>s |
+    WPM: <span id="wpm">0</span> |
+    Accuracy: <span id="acc">100</span>% |
+    Mistakes: <span id="mistakes">0</span>
+</div>
+
+<div class="progress">
+    <div id="bar"></div>
+</div>
+
+<div class="buttons">
+    <button id="finish">Finish</button>
+    <button class="secondary" id="restart">Restart</button>
+</div>
+
+<div id="result"></div>
+
+<h3>Leaderboard</h3>
+<ul id="leaderboard"></ul>
+
+</div>
+
+<script src="js/paragraph.js"></script>
+<script src="js/timer.js"></script>
+<script src="js/compare.js"></script>
+<script src="js/stats.js"></script>
+<script src="js/leaderboard.js"></script>
+<script src="js/controls.js"></script>
+</body>
+</html>
